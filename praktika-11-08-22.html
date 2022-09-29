@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Главная страница</title>
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+        .nav-theme {
+            background-color: #3d949e;
+        }
+    </style>
+</head>
+<body>
+  <!--Navbar start-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-theme">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="55px" height="66px" /></a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Переключатель навигации"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Главная <span class="sr-only">(текущая)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Выпадающий список
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенный</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input 
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Поиск"
+              aria-label="Поиск"
+              />
+              <button class="btn btn-dark my-2 my-sm-0" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </header>
+      <!--Navbar end-->
+      <!--Carousel start-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions"
+          data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions"
+          data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions"
+          data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/vhod_v_polikliniku.jpg" class="d-block w-100" alt="Слайдер на главной">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка первого слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/poliklinika.jpg" class="d-block w-100" alt="Слайдер на главной">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка второго слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/volontyorstvo.jpg" class="d-block w-100" alt="Слайдер на главной">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка третьего слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующий</span>
+        </a>
+      </div>
+      <!--Carousel end-->
+      <!--Footer start-->
+      <footer>
+      <div class="fixed-bottom">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="nav-theme p-4">
+            <h5 class="text-white h4 text-center">Все права защищены</h5>
+            <span class="text-muted">Какой-то контент в футере</span>
+          </div>
+        </div>
+          <nav class="navbar navbar-dark nav-theme">
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Переключатель навигации"
+            >
+
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+      </footer>
+      <!--Footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

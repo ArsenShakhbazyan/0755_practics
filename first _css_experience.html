@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/svetofor.jpg" type="image/x-icon" >
+    <title>Светофор</title>
+    <style>
+        * {
+            box-sizing: border-box; /*Задаю алгоритм расчета ширины и высоты элемента.*/
+        }
+        .box { /*Задаю определённый элемент. Вданном случае - это четырёхугольник.*/
+            width: 200px; /*Задаю ширину элемента.*/
+            height: 400px; /*Задаю высоту элемента.*/
+            background-color: black; /*Задаю цвет элемента.*/
+            padding-top: 25px; /*Задаю отступ от верхней грани элемента .box для группы элементов внутри него.*/
+        }
+        .red,
+        .yellow,
+        .green { /*Задаю группу внутренних элементов и цвета элементов*/
+            width: 100px; /*Задаю ширину элементов.*/
+            height: 100px; /*Задаю высоту элементов.*/
+            border-radius: 50%; /*Задаю округлую форму элементов*/
+            margin:auto; /*Задаю автоматическое центрирование элементов*/
+            border: solid grey 2px; /*Задаю цвет контура элементов*/
+            margin-bottom: 25px; /*Задаю отступ от нижнего края элемента .box*/
+            box-shadow: inset 0 0 15px rgb(203, 201, 201); /*Задаю тени элементов и цвет теней*/ 
+        }
+        .red {
+            background-color: red;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .green {
+            background-color: green;
+        } /*Задаю цвет элементов внутри элемента .box*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+    
+</body>
+</html>

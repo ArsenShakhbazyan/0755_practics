@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тернарный и методы массивов</title>
+</head>
+<body>
+    <script>
+        //let cars = ["Ford", "Audi", "BMW"];
+        //cars.push("Opel");
+        //cars.unshift("Volvo");
+        //cars.pop();
+        //delete cars [2];
+        //cars.splice(1, 0, "Another car");
+       //console.log(cars);
+
+        //function addSpecialNumbers(numbers) {
+            //let specialNumbers = [];
+            //numbers.forEach(function(num) {
+                //if (num % 3 == 0){
+                    //specialNumbers.push(num);
+                //}
+            //});
+            //return specialNumbers;
+        //}
+
+
+            //for(let i = 0; i < numbers.length; i++) {
+               // if(numbers[i] % 3 == 0){
+               //     specialNumbers.push(numbers[i]);
+              //  }
+           // }
+           // return specialNumbers
+       // }
+
+       //function addSpecialNumbers(numbers){
+        //let result = numbers.filter(function(num) {
+            //if (num %3 == 0){
+                //return true;
+            //}
+        //});
+            //return result
+       //}
+
+       function sortArr(numbers) {
+        let copyNumbers = numbers.slice();
+        let sorted = copyNumbers.sort(compare);
+        function campare(a, b) {
+            if (a > b) return 1;
+            else return -1;
+        };
+        return copyNumbers;
+       }
+       console.log(
+       [1, 2, 3, 4].reduce(function(acc,num) {
+        return acc + num;
+       }, 0)
+       );
+    
+        let arr = [1, 2, 3, 6, 7, 9, 4, 12];
+        console.log(sortArr(array));
+
+        let initArray = [1, 4, 5, 6, 7, 9, 5, 6, , [82, 3, 6, 9], 12, 88, 4, [88]];
+        function flat(arr) {
+            return arr.flat();
+        }
+
+    </script>
+</body>
+</html>

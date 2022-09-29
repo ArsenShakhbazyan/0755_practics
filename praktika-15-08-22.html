@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"
+/> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная страница</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .blog_article {
+          color: red;
+        }
+        .blog_article::first-letter {
+          font-size: 2rem;
+          color: blue;
+        }
+        .news_block {
+          background-image: url(img/poliklinika.jpg);
+          background-size: cover;
+          background-position: center;
+          height: 20rem;
+        }
+        .news_text {
+          max-width: 15rem;
+          height: auto;
+          padding: 0.5rem;
+          border: 1px solid blue;
+          border-radius: 4px;
+          margin: auto;
+          background-color: rgba(26, 199, 107, 0.4);
+          box-shadow: 0 0 8px 8 px rgba(13, 117, 62, 0.4);
+        }
+        .container-fluid1{
+          height: auto;
+          border: 1px solid black;
+          background-image: linear-gradient(135deg, yellow 10%, crimson 75%);
+          border-radius: 10px;
+          margin-bottom: 5px;
+          margin-left: 2px;
+          padding: 10px;
+        }
+
+        /*p {
+            font-family: Verdana, "Trebuchet MS", Tahoma, sans-serif;
+        } */
+    </style>
+  </head>
+  <body>
+
+    <!--Navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #cfc100;">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" width="55px" height="66px" alt="Какое-то наполнение">Какой-то КДЦ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/img/zamok.jpg">Замок<span class="sr-only">(текущая)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/img/svetofor.jpg">Светофор</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                О нас
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Наши специалисты</a>
+                <a class="dropdown-item" href="#">Список филиалов</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Режим работы</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенный</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Искать на сайте..." aria-label="Искать на сайте">
+            <button class="btn btn-danger" class="btn btn-outline-light my-2 my-sm-0" type="submit">Найти</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!--Carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/vhod_v_polikliniku.jpg" class="d-block w-100" alt="Слайдер1"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка первого слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/poliklinika.jpg" class="d-block w-100" alt="Слайдер2"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка второго слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/volontyorstvo.jpg" class="d-block w-100" alt="Слайдер3"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка третьего слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующий</span>
+        </a>
+      </div>
+      
+      <!--Blog-->
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-4 p-5">
+            <div class="card py-5 bg-warning text-center"><a href="img/svetofor.jpg" class="blog_article">Светофор</a></div>
+          </div>
+          <div class="col-md-4 p-5">
+            <div class="card py-5 bg-warning text-center"><a href="#" class="blog_article">Бот</a></div></div>
+          <div class="col-md-4 p-5">
+            <div class="card py-5 bg-warning text-center"><a href="#" class="blog_article">Кофемашина</a></div></div>
+        </div>
+      </div>
+
+      <!--News block-->
+      <div class="container-fluid news_block my-5 d-flex">
+        <div class="news_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error obcaecati voluptatibus aperiam reiciendis, recusandae in quod, id distinctio voluptatem facere earum, nesciunt exercitationem dolore nisi illum quasi vero dolorum optio.</div>
+      </div>
+
+      <!--Contact-->
+      <div class="container">
+        <h2 class="text-center text-danger">Обратная связь</h2>
+        <div class="row">
+          <div class="col-md-5">
+            <h3>Наши контакты</h3>
+            <h4>Адрес:</h4>
+            <p>г. Москва, ул. Академика Скрябина, д. 9, стр. 4</p>
+            <h4>Телефон:</h4>
+            <a href="tel:+74952605289">+7 (495) 260-52-89</a>
+            <h4>E-mail:</h4>
+            <a href="mailto:hotline@eduprof.ru">hotline@eduprof.ru</a>
+            <h4>График работы:</h4>
+            <p>Понедельник - четверг: с 8-30 по 17-15, пятница с 8-30 по 16-00; обучение по графику в субботу</p>
+          </div>
+          <div class="col-md-7">
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Имя" />
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="E-mail" />
+              </div>
+              <div class="form-group">
+                <textarea rows="2" class="form-control" placeholder="Сообщение"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="form-control btn bg-success" />
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--Task's icon-->
+      <div class="container text-center text-danger">
+        <h3>Мы на интерернет-ресурсах</h3>
+        <div class="row">
+          <div class="container-fluid1">
+            <a class="icon1 w-100" href="#"><img src="img/kisspng-vk-computer-icons-logo-vk-logo-5b37eb8d1c3663.2809628715303914371156.jpg" height="20px" width="40px" alt="vk"></a>
+          </div>
+          <div class="container-fluid1">
+            <a class="icon1 w-100" href="#"><img src="img/png-transparent-computer-icons-odnoklassniki-others-miscellaneous-odnoklassniki-реклама.png" height="30px" width="30px" alt="odnoklassniki"></a>
+          </div>
+          <div class="container-fluid1">
+            <a class="icon1 w-100" href="#"><img src="img/knife-multi-opener-icon-with-png-and-vector-format-for-free-166562.png" height="20px" width="35px" alt="twitter"></a>
+          </div>
+          <div class="container-fluid1">
+            <a class="icon1 w-100" href="#"><img src="img/mos_ru.png" height="20px" width="52px" alt="mos.ru"></a>
+        </div>
+      </div>
+      
+    <!--Footer-->
+    <footer>
+       
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-white p-4">
+                <h5 class="text-black h4">Запись к врачу</h5>
+                <span class="text-black">Выберите свободного специалиста</span>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-danger">
+              <button class="navbar-toggler btn btn-warning" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon" ></span>
+              </button>
+            </nav>
+          
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  </body>
+</html>
